@@ -1,7 +1,11 @@
 import React from 'react'
-import Filho from './Filho'
 
-export default props =>
-    <div>
-        <button>Alterar</button>
-    </div>
+export default props => {
+    return (
+        <div>
+            <button onClick={ (valorGerado) => {
+                props.onClicar(Math.random(), 'Fim!')
+            } }>Alterar</button>
+        </div>
+    )
+}

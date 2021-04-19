@@ -3,14 +3,16 @@ import Sub from './Sub'
 
 export default props => {
 
-    function quandoClicar() {
+    function quandoClicar(valorGerado, texto) {
         console.log('Ação!!')
+        console.log(valorGerado)
+        console.log(texto)
     }
 
     return (
         <div>
             <h4>Valor</h4>
-            <Sub sobrenome='Silva'>Pedro</Sub>
+            <Sub onClicar = {quandoClicar}>Pedro</Sub>
         </div>
     );
 };
