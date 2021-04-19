@@ -8,27 +8,32 @@ import Card from './components/Layout/Card'
 import Repeticao from './components/Repeticao'
 import Condicional from './components/Condicional'
 import CondicionalComIf from './components/CondicionalComIf'
+import Pai from './components/comunicacao/direta/Pai'
 
 export default (props) => (
 
     <div className="App">
-        <Card title="#06 - Condicional v2">
+        <Card title="#07 - Comunicação Direta" color="#FA6900">
+            <Pai sobrenome='Antunes'></Pai>
+        </Card>
+
+        <Card title="#06 - Condicional v2" color="#4A4E4D">
             <CondicionalComIf number={3}></CondicionalComIf>
         </Card>
 
-        <Card title="#05 - Condicional v1">
+        <Card title="#05 - Condicional v1" color="#0E9AA7">
             <Condicional number={4}></Condicional>
         </Card>
         
-        <Card title="#04 - Repeticao">
+        <Card title="#04 - Repeticao" color="#3da4ab">
             <Repeticao></Repeticao>
         </Card>
         
-        <Card title="#03 - Exercício X">
+        <Card title="#03 - Exercício X" color="#f6cd61">
             Conteudo
         </Card>
 
-        <Card title="#02 - Primeiro Componente">
+        <Card title="#02 - Primeiro Componente" color="#fe8a71">
             <Primeiro />
             <ComParametro title="Esse é o título"
                 subtitle="Esse é o subtítulo" />
