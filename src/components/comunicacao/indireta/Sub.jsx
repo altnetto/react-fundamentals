@@ -4,7 +4,7 @@ export default props => {
     return (
         <div>
             <button onClick={ (valorGerado) => {
-                props.onClicar(Math.random(), 'Fim!')
+                props.onClicar(Math.random(), 'Gerado')
             } }>Alterar</button>
         </div>
     )
